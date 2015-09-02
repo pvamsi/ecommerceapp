@@ -1,0 +1,11 @@
+<!-- productsPage page partial-->	
+<div class="category">
+	<div class="menuName"><h1>{{categoryDescription.category}}</h1></div>
+	<div ng-repeat="item in categoryDescription" ng-if="item.key === 'true'">
+		<div class="productContent">
+			<img ng-src="{{item.src}}" />
+			<a href= "#products/{{item.company}}" class="productname">{{item.company}}</a>
+			<p>{{item.desc}}</p>
+		</div>
+	</div>
+</div>

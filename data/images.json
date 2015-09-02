@@ -1,0 +1,42 @@
+{
+      "offerDetails": [
+            {
+                "src": "images/offer1.jpg",
+                "title": "HRX Men's Solid Casual Shirt",
+                "url": "images/men.jpg",
+                "price": "100",
+                "desc": "Beige and green woven casual shirt, has a spread collar, a full button placket on the front.",
+                "offer": "44% OFF",
+                "prodId": "1"
+            },
+            {
+                "src": "images/offer2.jpg",
+                "title": "Samsung Galaxy J5",
+                "url": "images/Electronics/Mobiles/Samsung/mob_samsung1.jpg",
+                "price": "6000",
+                "desc": "Beige and green woven casual shirt, has a spread collar, a full button placket on the front.",
+                "offer": "60% OFF",
+                "prodId": "2"
+            },
+            {
+                "src": "images/offer3.jpg",
+                "title": "apple laptop",
+                "url": "images/Electronics/Laptops/Apple/lap_apple2.jpg",
+                "price": "500",
+                "desc": "Beige and green woven casual shirt, has a spread collar, a full button placket on the front.",
+                "offer": "54% OFF",
+                "prodId": "3"
+            },
+            {
+                "src": "images/offer5.jpg",
+                "title": "apple laptop1",
+                "url": "images/men.jpg",
+                "price": "200",
+                "desc": "Beige and green woven casual shirt, has a spread collar, a full button placket on the front.",
+                "offer": "34% OFF",
+                "prodId": "4"
+            }
+        ]
+        
+  
+}

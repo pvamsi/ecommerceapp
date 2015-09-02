@@ -1,0 +1,13 @@
+<!-- product description page-->
+<div class="productsPartial">
+	<div class="menuName"><h1>{{productPartialDescription.category}}</h1></div>
+	<div ng-repeat="item in productPartialDescription">
+		<div class="productContent">
+			<img ng-src="{{item.src}}" />
+			<a class="productname">{{item.title}}</a>
+			<p>{{item.desc}}</p>
+			<button>ADD TO CART</button>
+			<button>BUY NOW</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,61 @@
+<!--main page partial-->
+<!--carousel partial-->
+<div class="carouselSection">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			 <li data-target="#myCarousel" ng-repeat="data in items" data-slide-to="{{$index}}" ng-class="{active: $index==0}" >
+			 </li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item" ng-repeat="data in items" ng-class="{active: $index==0}">
+				<a href="#offerpage/{{data.prodId}}" ><img src="{{data.src}}" alt="offersCarousel" width="500px" height="500px"/></a>
+			</div>
+		</div>	 
+	</div>
+<!-- main page products partial-->
+	<div class="productContainer">
+		<div class="electronics">
+
+			<div class="menuName"><a href="#categoryPage/electronics"><h1>Electronics</h1></a></div>
+			<div ng-repeat="item in products" ng-if="item.category === 'electronics'">
+				<div class="productContent" ng-if="item.mainkey === 'true' " >
+					<img ng-src="{{item.src}}" />
+					<a href="#productsPage/{{item.product}}"class="productname">{{item.product}}</a>
+					<p>{{item.desc}}</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="media">
+			<div class="menuName"><a href="#categoryPage/media"><h1>Media</h1></div></a>
+			<div ng-repeat="item in products" ng-if="item.category === 'media' ">
+				<div class="productContent" ng-if="item.mainkey === 'true'">
+				<img ng-src="{{item.src}}" />
+				<a href="#productsPage/{{item.product}}" class="productname">{{item.product}}</a>
+				<p>{{item.desc}}</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="men">
+			<div class="menuName"><a href="#categoryPage/men"><h1>Men</h1></div></a>
+			<div ng-repeat="item in products" ng-if="item.category === 'men' ">
+				<div class="productContent" ng-if="item.mainkey === 'true'">
+				<img ng-src="{{item.src}}" />
+				<a href="#productsPage/{{item.product}}" class="productname">{{item.product}}</a>
+				<p>{{item.desc}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="women">
+			<div class="menuName"><a href="#categoryPage/women"><h1>Women</h1></div></a>
+			<div ng-repeat="item in products" ng-if="item.category === 'women' ">
+				<div class="productContent" ng-if="item.mainkey === 'true'">
+				<img ng-src="{{item.src}}" />
+				<a href="#productsPage/{{item.product}}" class="productname">{{item.product}}</a>
+				<p>{{item.desc}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
