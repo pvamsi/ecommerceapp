@@ -25,3 +25,11 @@ carouselApp.config(['$routeProvider',function($routeProvider,$routeParams){
 		});
 		
 }]);
+
+carouselApp.run(function ($rootScope) {
+
+    $rootScope.tabClick = function ($event) {
+        $event.preventDefault();
+     };
+
+});

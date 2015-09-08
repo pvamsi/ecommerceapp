@@ -99,7 +99,7 @@
 		            <div class="searchComponent">
 		                    <div id="searchContainer">
 		                         <div class="input-group">
-		                            <input type="text" class="form-control" placeholder="search" id="query" name="query" value="">
+		                            <input type="text" ng-model="search.query" class="form-control" placeholder="search" id="query" name="query" value="">
 		                                <div class="input-group-btn">
 		                            <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
 		                            </div>
@@ -114,146 +114,146 @@
 		                    </div>
 		                    <div class="clear"></div>
 		            </div><!--search component-->
-		<div class="container">
-		  
-		  <div class="panel-group" id="accordion">
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title minus">
-		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed" >Electronics<span class="" href="#collapse1"></span></a>
-		        </h4>
-		      </div>
-		      <div id="collapse1" class="panel-collapse collapse ">
-		            <div class="panel-body">
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">MOBILE</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('sony')">Sony</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('micromax')">Micromax</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('samsung')">Samsung</a></li>
-		                </ul> 
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">LAPTOP</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('sony')">Apple</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('micromax')">Dell</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('samsung')">Lenovo</a></li>
-		                </ul> 
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">NOTEPAD</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('Google')">Google</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('Samsung')">Samsung</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('sony')">Sony</a></li>
-		                </ul> 
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">TV</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('lg')">LG</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('samsung')">Samsung</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('sony')">Sony</a></li>
-		                </ul>
-		            </div>
-		        </div>
-		    </div>
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title minus">
-		          <a data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse2">Media<span class="" href="#collapse1"></span></a>
-		        </h4>
-		      </div>
-		      <div id="collapse2" class="panel-collapse collapse">
-		        <div class="panel-body">
-		           <ul>
-		                    <li role="presentation" class="dropdown-header">AUDIO</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('pop')">Pop</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('devotional')">Devotional</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('folk')">Folk</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('movie')">Movie</a></li>
-		                </ul> 
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">VIDEO</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('english')">English</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('tamil')">Tamil</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('telugu')">Telugu</a></li>
-		                </ul>
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">GAMES</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('Adventure')">Adventurers</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('action')">Action</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('racing')">Racing</a></li>
-		                </ul>
-		            
-		        </div>
-		        </div>
-		    </div>
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title minus">
-		          <a data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse3">Men<span href="#collapse1"></span></a>
-		        </h4>
-		      </div>
-		        <div id="collapse3" class="panel-collapse collapse">
-		            <div class="panel-body">
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">SUNGLASSES</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('raybon')">Raybon</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('fast track')">Fastrack</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('gucci')">Gucci</a></li>
-		                </ul> 
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">FOOTWEAR</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('puma')">Puma</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('reebok')">Reebok</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('adidas')">Adidas</a></li>
-		                </ul>
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">WATCHES</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('rolex')">Rolex</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('titan')">Titan</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('casio')">Casio</a></li>
-		                </ul>
-		            </div>
-		        </div>
-		    </div>
-		      
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title minus">
-		          <a data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse4">Women<span class="" href="#collapse1"></span></a>
-		        </h4>
-		      </div>
-		        <div id="collapse4" class="panel-collapse collapse">
-		            <div class="panel-body">
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">HANDBAG</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('lee')">Lee</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('puma')">Puma</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('fast track')">Fast track</a></li>
-		                </ul> 
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">JEWELLERY</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('joy alukas')">Joy Alukas</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('tanishq')">Tanishq</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('kpj')">Kpj</a></li>
-		                </ul>
-		                
-		                <ul>
-		                    <li role="presentation" class="dropdown-header">GOOGLES</li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('fast track')">Fast track</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('tommy')">Tommy</a></li>
-		                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('calvin')">Calvin</a></li>
-		                </ul>
-		                  <div id="clear"></div>
-		            </div>
-		        </div> 
-		    </div>
-		</div>
-		</div>
+		 <div class="container">
+  
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title minus">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed" ng-click="tabClick($event)">Electronics<span class="" href="#collapse1"  ng-click="tabClick($event)"></span></a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse" >
+            <div class="panel-body">
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">MOBILE</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('sony')">Sony</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('micromax')">Micromax</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('samsung')">Samsung</a></li>
+                </ul> 
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">LAPTOP</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('sony')">Apple</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('micromax')">Dell</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('samsung')">Lenovo</a></li>
+                </ul> 
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">NOTEPAD</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('Google')">Google</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('Samsung')">Samsung</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('sony')">Sony</a></li>
+                </ul> 
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">TV</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('lg')">LG</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('samsung')">Samsung</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('sony')">Sony</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title minus">
+          <a data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse2" ng-click="tabClick($event)">Media<span class="" href="#collapse1"  ng-click="tabClick($event)"></span></a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+           <ul class="drop">
+                    <li role="presentation" class="dropdown-header">AUDIO</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('pop')">Pop</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('devotional')">Devotional</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('folk')">Folk</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('movie')">Movie</a></li>
+                </ul> 
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">VIDEO</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('english')">English</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('tamil')">Tamil</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('telugu')">Telugu</a></li>
+                </ul>
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">GAMES</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('Adventure')">Adventurers</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('action')">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('racing')">Racing</a></li>
+                </ul>
+            
+        </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title minus">
+          <a data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse3" ng-click="tabClick($event)">Men<span href="#collapse1" ng-click="tabClick($event)"></span></a>
+        </h4>
+      </div>
+        <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">SUNGLASSES</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('raybon')">Raybon</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('fast track')">Fastrack</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('gucci')">Gucci</a></li>
+                </ul> 
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">FOOTWEAR</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('puma')">Puma</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('reebok')">Reebok</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('adidas')">Adidas</a></li>
+                </ul>
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">WATCHES</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('rolex')">Rolex</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('titan')">Titan</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('casio')">Casio</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+      
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title minus">
+          <a data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse4" ng-click="tabClick($event)">Women<span class="" href="#collapse1" ng-click="tabClick($event)"></span></a>
+        </h4>
+      </div>
+        <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">HANDBAG</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('lee')">Lee</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('puma')">Puma</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('fast track')">Fast track</a></li>
+                </ul> 
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">JEWELLERY</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('joy alukas')">Joy Alukas</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('tanishq')">Tanishq</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('kpj')">Kpj</a></li>
+                </ul>
+                
+                <ul class="drop">
+                    <li role="presentation" class="dropdown-header">GOOGLES</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('fast track')">Fast track</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('tommy')">Tommy</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#searchView" ng-click="getClickItems('calvin')">Calvin</a></li>
+                </ul>
+                  <div id="clear"></div>
+            </div>
+        </div> 
+    </div>
+</div>
+</div>
 		        </div>
 
 	    </nav>
@@ -266,6 +266,7 @@
 	        <script src="library/bootstrap.min.js"></script>
 			<script src="library/angular.js"></script>
 			<script src="library/angular-route.js"></script>
+			<script src="library/angular-ui.min.js"></script>
 			<script src="modules/mainModule.js"></script>
 			<script src="app.js"></script>
 			<script src="service/service.js"></script>
@@ -274,6 +275,8 @@
 			<script src="controller/productsPageController.js"></script>
 			<script src="controller/productsController.js"></script>
 			<script src="controller/categoryPageController.js"></script>
+			
+
 			
 	</body>
 	<script>

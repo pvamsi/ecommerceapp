@@ -11,11 +11,11 @@
 			var deferred = $q.defer();
             var config = {
                 method: 'GET',
-                url: "data/images.json",
+                url: "/offers",
                
             };
 
-            $http(config)
+           return $http(config)
                 .success(function(data, status, headers, config) {
                     deferred.resolve(data);
 					
@@ -35,11 +35,11 @@
         	var deferred = $q.defer();
             var config = {
                 method: 'GET',
-                url: "data/product.json",
+                url: "/products",
                
             };
 
-            $http(config)
+           return $http(config)
                 .success(function(data, status, headers, config) {
                     deferred.resolve(data);
 					

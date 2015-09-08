@@ -3,15 +3,16 @@
 <div class="brands">
 <h1>BRAND</h1>
 <ul>
-<li ng-repeat="item in categoryDescription" ng-if="item.key === 'true'">
-<input type="checkbox" ng-model="item.selected" ng-change="save()"><span>{{item.company}}</span>
+<li ng-repeat="item in categorylist | unique:'company'" >
+<!-- <input type="checkbox" ng-model="checkbox.selected" ng-click="getBrand(item)"/><span>{{item.company}}</span> -->
+<input type="checkbox" ng-model="item.selected" /><span>{{item.company}}</span>
 </li>
 </ul>
 
 </div>
 <div class="productCategory">
 	<div class="menuName"><h1>{{categoryDescription.category}}</h1></div>
-	<div ng-repeat="item in categoryDescription">
+	<div ng-repeat="item in categoryDescription | filter: search.query | filterByCategory : categorylist ">
 		<div class="categoryContent">
 			<img ng-src="{{item.src}}" />
 			<a href= "#products/{{item.company}}" class="productname">{{item.title}}</a>

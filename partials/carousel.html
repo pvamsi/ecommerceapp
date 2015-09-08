@@ -17,7 +17,7 @@
 		<div class="electronics">
 
 			<div class="menuName"><a href="#categoryPage/electronics"><h1>Electronics</h1></a></div>
-			<div ng-repeat="item in products" ng-if="item.category === 'electronics'">
+			<div ng-repeat="item in products | filter: search.query" ng-if="item.category === 'electronics'">
 				<div class="productContent" ng-if="item.mainkey === 'true' " >
 					<img ng-src="{{item.src}}" />
 					<a href="#productsPage/{{item.product}}"class="productname">{{item.product}}</a>
@@ -28,7 +28,7 @@
 		</div>
 		<div class="media">
 			<div class="menuName"><a href="#categoryPage/media"><h1>Media</h1></div></a>
-			<div ng-repeat="item in products" ng-if="item.category === 'media' ">
+			<div ng-repeat="item in products | filter: search.query" ng-if="item.category === 'media' ">
 				<div class="productContent" ng-if="item.mainkey === 'true'">
 				<img ng-src="{{item.src}}" />
 				<a href="#productsPage/{{item.product}}" class="productname">{{item.product}}</a>
@@ -39,7 +39,7 @@
 		
 		<div class="men">
 			<div class="menuName"><a href="#categoryPage/men"><h1>Men</h1></div></a>
-			<div ng-repeat="item in products" ng-if="item.category === 'men' ">
+			<div ng-repeat="item in products | filter: search.query" ng-if="item.category === 'men' ">
 				<div class="productContent" ng-if="item.mainkey === 'true'">
 				<img ng-src="{{item.src}}" />
 				<a href="#productsPage/{{item.product}}" class="productname">{{item.product}}</a>
@@ -49,7 +49,7 @@
 		</div>
 		<div class="women">
 			<div class="menuName"><a href="#categoryPage/women"><h1>Women</h1></div></a>
-			<div ng-repeat="item in products" ng-if="item.category === 'women' ">
+			<div ng-repeat="item in products | filter: search.query" ng-if="item.category === 'women' ">
 				<div class="productContent" ng-if="item.mainkey === 'true'">
 				<img ng-src="{{item.src}}" />
 				<a href="#productsPage/{{item.product}}" class="productname">{{item.product}}</a>
